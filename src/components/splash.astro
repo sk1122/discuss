@@ -7,7 +7,7 @@ import HeroImage from "~/components/hero-image.astro";
 const widths = [450, 800];
 const sizes = "(min-width: 640px) 42vw, 67vw";
 
-const { webp, avif, png } = generateImage("src/assets/astronaut.png", {
+const { webp, avif, png } = generateImage("src/assets/Illustration.png", {
   widths,
   formats: ["webp", "avif", "png"],
   outputDir: "public/assets/images/astronaut",
@@ -47,7 +47,7 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
         src={png[0].url}
         width={png[0].width}
         height={png[0].height}
-        alt="A floating astronaut in a space suit"
+        alt="A Image"
       />
     </picture>
   </div>
